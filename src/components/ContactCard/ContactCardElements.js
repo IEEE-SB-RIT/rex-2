@@ -8,6 +8,7 @@ export const QueryCard = styled.div`
     border-radius: 18px;
     padding: 50px 40px;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     bottom: 120px;
 
@@ -34,6 +35,13 @@ export const Column = styled.div`
         color: #d2d2d2;
         text-align: left;
     }
+
+    @media screen and (max-width: 480px)
+    {
+        flex: 0 1 100%;
+        padding: 0;
+        margin-bottom: 50px; 
+    }
 `
 
 export const VolunteerContactInfo = styled.div`
@@ -41,8 +49,19 @@ export const VolunteerContactInfo = styled.div`
     display: flex;
     align-items: center;
     margin: 30px 0;
+
+    @media screen and (max-width: 480px)
+    {
+        flex-direction: column;
+        align-items: start;
+    }
 `
 
 export const Person = styled.div`
     margin-right: 40px;
+
+    @media screen and (max-width: 480px)
+    {
+        margin: 10px 0;
+    }
 `

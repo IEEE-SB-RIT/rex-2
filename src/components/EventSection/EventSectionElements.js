@@ -7,8 +7,10 @@ export const GradientCard = styled.div`
     border-radius: 18px;
     min-height: 300px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 0 200px 0;
+
 `
 
 export const Event = styled.div`
@@ -16,4 +18,9 @@ export const Event = styled.div`
     height: 100%;
     padding: 20px;
     color: white;
+
+    @media screen and (max-width: 480px)
+    {
+        flex: 0 1 100%;
+    }
 `
