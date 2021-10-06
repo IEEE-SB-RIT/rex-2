@@ -28,6 +28,7 @@ export const NavLogo = styled.img`
 export const NavList = styled.ul`
     list-style: none;
     display: flex;
+    align-items: center;
 `
 
 export const NavListItem = styled.li`
