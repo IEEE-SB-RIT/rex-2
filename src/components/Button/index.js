@@ -1,12 +1,10 @@
-import { ButtonContainer, Button } from "./Button";
+import { Button } from "./Button";
 
 export default function JoinButton(props)
 {
     return (
-        <ButtonContainer>
-            <Button>
-                {props.children}
-            </Button>
-        </ButtonContainer>
+        <Button>
+            {props.children}
+        </Button>
     );
 }
