@@ -11,6 +11,11 @@ export const Section = styled.div`
         position: absolute;
         right: 0;
         top: 50%;
+
+        @media screen and (max-width: 480px)
+        {
+            top: 60%;
+        }
         
     }
 
@@ -18,6 +23,11 @@ export const Section = styled.div`
         position: absolute;
         left: 0;
         top: 76%;
+
+        @media screen and (max-width: 480px)
+        {
+            top: 88%;
+        }
         
     }
 
@@ -48,4 +58,5 @@ export const HomeSection = styled(Section)`
     background: url(${rexBg});
     background-repeat: no-repeat;
     background-size: cover;
+
 `

@@ -4,6 +4,17 @@ import { CenterContainer } from "../Center/CenterElements";
 
 export const HeroContainer = styled.div`
     width: 100%;
+    position: relative;
+
+
+    & h1, h2, p {
+        z-index: 5;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        margin-bottom: 100px; 
+    }
 `
 
 export const HeroCenter = styled(CenterContainer)`
@@ -15,7 +26,7 @@ export const HeroCenter = styled(CenterContainer)`
     align-items: center;
     justify-content: center;
     text-algin: center;
-    padding: 60px 20px 0 20px;
+    padding: 250px 20px 0 20px;
 `
 
 export const HeroContentWrap = styled.div`
@@ -31,7 +42,7 @@ export const HeroContentWrap = styled.div`
         @media screen and (max-width: 480px)
         {
             width: 100%;
-            text-align: left;
+            text-align: center;
         }
 
     }
@@ -46,7 +57,8 @@ export const HeroContentWrap = styled.div`
         @media screen and (max-width: 480px)
         {
             width: 100%;
-            text-align: left;
+            text-align: center;
+            font-size: 16px;
         }
     }
 `
@@ -57,11 +69,25 @@ export const LiveInContent = styled.div`
     align-items: center;
 
     & h2{
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
+    }
+
+    & h2:nth-of-type(2){
+        @media screen and (max-width: 480px)
+        {
+            font-size: 22px;
+            line-height: 1.8;
+            margin-top: 50px; 
+        } 
     }
 
     & h2 span{
         font-family: 'DM Sans', sans-serif;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        margin-top: 112px;
     }
 `
 

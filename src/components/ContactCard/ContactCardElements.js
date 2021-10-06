@@ -17,6 +17,13 @@ export const QueryCard = styled.div`
         
         margin-bottom: 20px;
     }
+
+    & p {
+        @media screen and (max-width: 480px)
+        {
+            font-size: 16px;
+        }
+    }
 `
 
 export const Column = styled.div`

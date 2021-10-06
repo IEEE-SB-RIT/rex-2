@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { CountDownWrap } from "./CountDownElements";
+import { CountDownWrap, MobileBreaks } from "./CountDownElements";
 
 export default function CountDown(props)
 {
@@ -44,9 +44,9 @@ export default function CountDown(props)
         <>
         <CountDownWrap>
         <h2>
-            <span >{count.days}</span> Days:&nbsp; 
-            <span >{count.hours}</span> Hours:&nbsp; 
-            <span >{count.minutes}</span> Minutes:&nbsp; 
+            <span className>{count.days}</span> Days:&nbsp;<MobileBreaks /> 
+            <span >{count.hours}</span> Hours:&nbsp;<MobileBreaks />
+            <span >{count.minutes}</span> Minutes:&nbsp;<MobileBreaks />
             <span >{count.seconds}</span> Seconds
         </h2>
         </CountDownWrap>

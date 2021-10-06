@@ -13,6 +13,11 @@ export const GradientCard = styled.div`
     position: relative;
     z-index: 5;
 
+    @media screen and (max-width: 480px)
+    {
+        margin: 50px 0 300px 0;
+    }
+
 `
 
 export const Event = styled.div`

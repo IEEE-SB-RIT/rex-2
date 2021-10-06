@@ -1,11 +1,15 @@
 import styled, {keyframes} from "styled-components";
 
+export const IconWrap = styled.div`
+  margin: 30px 0 100px 0;
+`
+
 export const Mouse = styled.div`
     width: 23px;
     height: 38px;
     border: 2px solid #858585;
     border-radius: 50px;
-    margin: 40px 0 10px 0;
+    margin: 0 0 10px 0;
 `
 
 const scrollDown = keyframes`
