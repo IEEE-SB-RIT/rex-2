@@ -37,4 +37,9 @@ export const NavListItem = styled.li`
     color: #DFDFDF;
     padding: 10px 20px;
     margin: 0 5px;
+
+    & button{
+        font-size: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
 `

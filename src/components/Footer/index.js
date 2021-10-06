@@ -2,7 +2,7 @@ import ContactCard from "../ContactCard";
 import { FooterSection} from "./FooterElements";
 import {CenterContainer} from "../Center/CenterElements";
 import JoinButton from "../Button";
-import { ButtonContainer } from "../Button/Button";
+import { ButtonContainer } from "../Button/ButtonElements";
 
 export default function Footer()
 {
