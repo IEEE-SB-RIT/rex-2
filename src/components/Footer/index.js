@@ -1,9 +1,7 @@
-import react from "react";
 import ContactCard from "../ContactCard";
 import { FooterSection} from "./FooterElements";
-import {CenterContainer} from "../Center/CenterElements"
-
-
+import {CenterContainer} from "../Center/CenterElements";
+import JoinButton from "../Button";
 
 export default function Footer()
 {
@@ -14,6 +12,7 @@ export default function Footer()
                 <CenterContainer>
                 <ContactCard />
                 <h3>Don’t miss your chance! Register for the event now!</h3>
+                <JoinButton>Register Now</JoinButton>
                 </CenterContainer>
             </FooterSection>
         </>
