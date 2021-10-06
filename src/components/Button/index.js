@@ -4,9 +4,9 @@ export default function JoinButton(props)
 {
     return (
         <ButtonContainer>
-        <Button>
-            {props.children}
-        </Button>
+            <Button>
+                {props.children}
+            </Button>
         </ButtonContainer>
     );
 }
