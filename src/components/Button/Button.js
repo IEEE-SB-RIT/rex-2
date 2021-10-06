@@ -5,7 +5,6 @@ export const ButtonContainer = styled.div`
 `
 
 export const Button = styled.button`
-    width: contain;
     height: 42px;
     border-radius: 6px;
     border: none;
