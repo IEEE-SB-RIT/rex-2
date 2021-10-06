@@ -10,6 +10,8 @@ export const GradientCard = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 0 200px 0;
+    position: relative;
+    z-index: 5;
 
 `
 

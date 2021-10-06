@@ -9,6 +9,7 @@ export const Nav = styled.nav`
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
 `
 
 export const NavCenter = styled(CenterContainer)`

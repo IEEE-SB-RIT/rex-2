@@ -19,3 +19,21 @@ p{
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
 }
+
+.dashed-circle {
+    animation: rotate 37s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+    
+}
+    
+@keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
+}
+    
