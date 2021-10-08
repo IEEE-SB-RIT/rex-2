@@ -1,8 +1,9 @@
 import ContactCard from "../ContactCard";
-import { FooterSection} from "./FooterElements";
+import { FooterSection } from "./FooterElements";
 import {CenterContainer} from "../Center/CenterElements";
 import JoinButton from "../Button";
 import { ButtonContainer } from "../Button/ButtonElements";
+import FooterNav from "../FooterSection";
 
 export default function Footer()
 {
@@ -16,6 +17,7 @@ export default function Footer()
                 <ButtonContainer>
                     <JoinButton>Register Now</JoinButton>
                 </ButtonContainer>
+                <FooterNav />
                 </CenterContainer>
             </FooterSection>
         </>
