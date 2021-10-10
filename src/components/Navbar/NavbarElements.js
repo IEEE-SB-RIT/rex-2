@@ -37,6 +37,7 @@ export const NavListItem = styled.li`
     color: #DFDFDF;
     padding: 10px 20px;
     margin: 0 5px;
+    cursor: pointer;
 
     & button{
         font-size: 14px;
