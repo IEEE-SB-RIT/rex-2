@@ -5,7 +5,7 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 80px;
+    min-height: 80px; 
     position: absolute;
     top: 0;
     left: 0;

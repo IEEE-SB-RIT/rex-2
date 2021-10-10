@@ -16,7 +16,7 @@ export default function Navbar()
                         <NavListItem>Events</NavListItem>
                         <NavListItem>Team</NavListItem>
                         <NavListItem>Contact Us</NavListItem>
-                        <NavListItem><JoinButton style={{fontSize: "14px"}}>Register</JoinButton></NavListItem>
+                        <NavListItem><JoinButton>Register</JoinButton></NavListItem>
                     </NavList>
                 </NavCenter>
             </Nav>
