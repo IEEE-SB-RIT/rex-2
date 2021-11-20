@@ -32,8 +32,9 @@ export const FooterLinksContainer = styled.div`
             & a {
                 color: white;
                 font-family: 'DM Sans', sans-serif;
-                font-size: 18px;
+                font-size: 15px;
                 line-height: 24px;
+                text-decoration: none;
             }
         }
     }
