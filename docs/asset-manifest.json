@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fdfc36de.chunk.css",
+    "main.js": "./static/js/main.427966f6.chunk.js",
+    "main.js.map": "./static/js/main.427966f6.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.b2f3bf3c.js",
+    "runtime-main.js.map": "./static/js/runtime-main.b2f3bf3c.js.map",
+    "static/js/2.3a2cc397.chunk.js": "./static/js/2.3a2cc397.chunk.js",
+    "static/js/2.3a2cc397.chunk.js.map": "./static/js/2.3a2cc397.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.fdfc36de.chunk.css.map": "./static/css/main.fdfc36de.chunk.css.map",
+    "static/js/2.3a2cc397.chunk.js.LICENSE.txt": "./static/js/2.3a2cc397.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/MonumentExtended-Regular.db74f7a5.otf",
+    "static/media/rex-bg-all.3f72b722.jpg": "./static/media/rex-bg-all.3f72b722.jpg",
+    "static/media/rex-logo-white.7e9f7960.png": "./static/media/rex-logo-white.7e9f7960.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2f3bf3c.js",
+    "static/js/2.3a2cc397.chunk.js",
+    "static/css/main.fdfc36de.chunk.css",
+    "static/js/main.427966f6.chunk.js"
+  ]
+}
