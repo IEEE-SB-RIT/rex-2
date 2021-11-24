@@ -1,7 +1,20 @@
 import React from 'react';
-import { GradientCard, Event } from './EventSectionElements';
+import {
+  GradientCard,
+  Event,
+  PreEventBanner,
+  WorkshopBanner,
+  TalksBanner,
+  CulturalBanner,
+} from './EventSectionElements';
 import eventpic from '../../images/preRex2.jpeg';
+import { Link } from 'react-router-dom';
 
+function bannerClick() {
+  window.open(
+    'https://docs.google.com/forms/d/e/1FAIpQLScWz7ABN-BC52BGDbJZswoqB-2KJjbh_Aqyy09HomkXB5tHCg/viewform',
+  );
+}
 export default function EventSection() {
   return (
     <>
@@ -9,7 +22,6 @@ export default function EventSection() {
         <span>E</span>VENTS
       </h1>
       <p>Stay tune till we reveal our amazing and exciting events!</p>
-
       <svg
         width="244"
         height="394"
@@ -27,20 +39,33 @@ export default function EventSection() {
           stroke-dasharray="3 10"
         />
       </svg>
-
       <GradientCard>
         <Event>
           <h3>Pre-events</h3>
           <br />
-          <img src={eventpic} alt="Pre Event" height={200} />
-        </Event>
-
-        <Event>
-          <h3>Panel Discussions</h3>
+          <br />
+          <PreEventBanner onClick={bannerClick}></PreEventBanner>
         </Event>
 
         <Event>
           <h3>Workshops</h3>
+          <br />
+          <br />
+          <WorkshopBanner></WorkshopBanner>
+        </Event>
+
+        <Event>
+          <h3>Talk Sessions</h3>
+          <br />
+          <br />
+          <TalksBanner></TalksBanner>
+        </Event>
+
+        <Event>
+          <h3>Cultural</h3>
+          <br />
+          <br />
+          <CulturalBanner></CulturalBanner>
         </Event>
       </GradientCard>
 
