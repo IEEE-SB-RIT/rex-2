@@ -50,6 +50,16 @@ export const Event = styled.div`
   &:hover h3{
     transform: scale(1.1);
     transition: transform 0.5s ease;
+
+  & h3:nth-of-type(2)::after, & h3:nth-of-type(3)::after, & h3:nth-of-type(4)::after 
+  {
+    content: "COMING SOON";
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50px;
   }
 
   @media screen and (max-width: 480px) {
