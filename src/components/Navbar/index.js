@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import {
   Nav,
   MobNav,
@@ -13,45 +14,21 @@ import Icon from './Icon';
 
 import rexLogo from '../../images/rex-logo-white.png';
 
-function rex1() {
-  window.open('https://ieee-sb-rit.github.io/rex-1/');
-}
-
-function events() {
-  // window.open('https://ieee-sb-rit.github.io/rex-1/');
-}
-function team() {
-  // window.open('https://ieee-sb-rit.github.io/rex-1/');
-}
-function contactUs() {
-  // window.open('https://ieee-sb-rit.github.io/rex-1/');
-}
-
-export default function Navbar() {
-  const navbarLinks = ['Rex 1.0', 'Events', 'Team', 'Contact Us', 'Register'];
-
-  const [isOpen, setIsOpen] = useState(true);
-
-  const expand = () => {
-    setIsOpen(!isOpen);
-  };
+export default function Navbar(props) {
+  const navbarLinks = [{title: 'Rex 1.0', link: '#'}, {title: 'Events', link: 'events'}, {title: 'Team', link: 'team'}, {title: 'Contact Us', link: 'contact'}, {title: 'Register', link: '#'}];
 
   const generateNavLinks = () => {
     return navbarLinks.map((link) => {
-      if (link === 'Register')
+      if (link.title === 'Register')
         return (
           <NavListItem>
-            <JoinButton>{link}</JoinButton>
+            <JoinButton>{link.title}</JoinButton>
           </NavListItem>
         );
-      else if (link === 'Rex 1.0')
-        return <NavListItem onClick={rex1}>{link}</NavListItem>;
-      else if (link === 'Events')
-        return <NavListItem onClick={events}>{link}</NavListItem>;
-      else if (link === 'Team')
-        return <NavListItem onClick={team}>{link}</NavListItem>;
-      else if (link === 'Contact Us')
-        return <NavListItem onClick={contactUs}>{link}</NavListItem>;
+      else if (link.title === 'Rex 1.0')
+        return <a href="#"><NavListItem>{link.title}</NavListItem></a>;
+      else
+        return <Link to={link.link}><NavListItem>{link.title}</NavListItem></Link>;
     });
   };
 
@@ -62,10 +39,10 @@ export default function Navbar() {
           <NavLogo src={rexLogo} />
           <NavList>{generateNavLinks()}</NavList>
         </NavCenter>
-        <Icon onClick={expand} />
+        <Icon toggle={props.toggle}/>
       </Nav>
-      <MobNav isOpen={true}>
-        <MobNavList>{generateNavLinks()}</MobNavList>
+      <MobNav isOpen={props.isOpen} >
+        <MobNavList onClick={props.toggle}>{generateNavLinks()}</MobNavList>
       </MobNav>
     </>
   );

@@ -13,27 +13,16 @@ export const Nav = styled.nav`
 `;
 
 export const MobNav = styled.div`
-  display: block;
   position: fixed;
-  right: 0;
-  height: 60px;
-  width: 60px;
   background: black;
-  border-radius: 50%;
-  opacity: 0;
   overflow: hidden;
   z-index: 15;
   transition: all 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: ${({isOpen})=>(isOpen?'1':'0')};
+  top: ${({isOpen})=>(isOpen?'0':'-100%')};
 
-  ${(props) =>
-    props.isOpen &&
-    css`
-      transform: scale(60);
-    `}
-
-  @media screen and (max-width: 480px) {
-    display: block;
-  }
 `;
 
 export const NavCenter = styled(CenterContainer)`
@@ -47,6 +36,7 @@ export const NavCenter = styled(CenterContainer)`
 
 export const NavLogo = styled.img`
   height: 40px;
+  object-fit: contain;
 
   @media screen and (max-width: 480px) {
     height: 28px;
@@ -67,6 +57,7 @@ export const MobNavList = styled.ul`
   width: 100vw;
   height: 100vh;
   display: flex;
+  // position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;

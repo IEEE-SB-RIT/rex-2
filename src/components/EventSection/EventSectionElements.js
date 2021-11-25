@@ -13,6 +13,7 @@ export const GradientCard = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   margin: 50px 0 200px 0;
   position: relative;
   z-index: 5;
@@ -32,67 +33,86 @@ export const Event = styled.div`
   padding: 20px;
   color: white;
 
+  & svg{
+      margin: 0 0 30px 0;
+      position: relative !important;
+      font-size: 75px;
+      padding: 15px;
+      background-color: #66346060;
+      border-radius: 8px;
+  }
+
+  &:hover svg{
+    filter: brightness(2.5);
+    transition: filter 0.4s ease;
+  }
+
+  &:hover h3{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+
   @media screen and (max-width: 480px) {
     flex: 0 1 100%;
   }
 `;
 
-export const PreEventBanner = styled.div`
-  background-image: url(${eventpic});
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 45px;
-  height: 160px;
-  width: 160px;
-  border-radius: 10px;
+// export const PreEventBanner = styled.div`
+//   background-image: url(${eventpic});
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   margin-top: 45px;
+//   height: 160px;
+//   width: 160px;
+//   border-radius: 10px;
 
-  &:hover {
-    transform: scale(1.05);
-    transition: ease 0.3s;
-  }
-`;
+//   &:hover {
+//     transform: scale(1.05);
+//     transition: ease 0.3s;
+//   }
+// `;
 
-export const WorkshopBanner = styled.div`
-  background-image: url(${workshop});
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 160px;
-  width: 160px;
-  margin-top: 45px;
-  border-radius: 10px;
+// export const WorkshopBanner = styled.div`
+//   background-image: url(${workshop});
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   height: 160px;
+//   width: 160px;
+//   margin-top: 45px;
+//   border-radius: 10px;
 
-  &:hover {
-    transform: scale(1.05);
-    transition: ease-in 0.3s;
-  }
-`;
+//   &:hover {
+//     transform: scale(1.05);
+//     transition: ease-in 0.3s;
+//   }
+// `;
 
-export const TalksBanner = styled.div`
-  background-image: url(${talk});
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 160px;
-  width: 160px;
-  margin-top: 45px;
-  border-radius: 10px;
+// export const TalksBanner = styled.div`
+//   background-image: url(${talk});
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   height: 160px;
+//   width: 160px;
+//   margin-top: 45px;
+//   border-radius: 10px;
 
-  &:hover {
-    transform: scale(1.05);
-    transition: ease-in 0.3s;
-  }
-`;
+//   &:hover {
+//     transform: scale(1.05);
+//     transition: ease-in 0.3s;
+//   }
+// `;
 
-export const CulturalBanner = styled.div`
-  background-image: url(${cultural});
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 160px;
-  width: 160px;
-  margin-top: 45px;
-  border-radius: 10px;
+// export const CulturalBanner = styled.div`
+//   background-image: url(${cultural});
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   height: 160px;
+//   width: 160px;
+//   margin-top: 45px;
+//   border-radius: 10px;
 
-  &:hover {
-    transform: scale(1.05);
-    transition: ease-in 0.3s;
-  }
-`;
+//   &:hover {
+//     transform: scale(1.05);
+//     transition: ease-in 0.3s;
+//   }
+// `;

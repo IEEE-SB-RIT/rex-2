@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Icon()
+export default function Icon({toggle})
 {
     return (
         <>
-            <HamburgerIcon />
+            <HamburgerIcon onClick={toggle}/>
         </>
     )
 }

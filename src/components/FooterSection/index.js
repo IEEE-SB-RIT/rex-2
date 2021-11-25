@@ -3,6 +3,7 @@ import { NavLogo } from '../Navbar/NavbarElements';
 import {
   FooterSectionContainer,
   FooterLinksContainer,
+  LinksContainer
 } from './FooterSectionElements';
 
 export default function FooterNav() {
@@ -10,7 +11,7 @@ export default function FooterNav() {
     <FooterSectionContainer>
       <NavLogo src={rexLogo} />
       <FooterLinksContainer>
-        <div className="links">
+        <LinksContainer>
           <h3>Useful Links</h3>
           <ul>
             <li>
@@ -41,8 +42,8 @@ export default function FooterNav() {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="links">
+        </LinksContainer>
+        <LinksContainer>
           <h3>See More</h3>
           <ul>
             <li>
@@ -64,7 +65,7 @@ export default function FooterNav() {
               </a>
             </li>
           </ul>
-        </div>
+        </LinksContainer>
       </FooterLinksContainer>
     </FooterSectionContainer>
   );

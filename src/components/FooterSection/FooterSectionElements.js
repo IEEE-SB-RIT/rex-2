@@ -7,6 +7,16 @@ export const FooterSectionContainer = styled.section`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
+    & img{
+        height: 40px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        flex-direction: column;
+    }
 `
 
 export const FooterLinksContainer = styled.div`
@@ -38,4 +48,19 @@ export const FooterLinksContainer = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 480px)
+    {
+        flex-direction: column ;
+        width: 100%;
+    }
 `
+
+export const LinksContainer = styled.div`
+    @media screen and (max-width: 480px)
+    {
+        width: 100%;
+        margin-top: 60px;
+        padding: 0 40px;
+    }
+`;

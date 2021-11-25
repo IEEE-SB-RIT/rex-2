@@ -9,6 +9,7 @@ import {
 } from './EventSectionElements';
 import eventpic from '../../images/preRex2.jpeg';
 import { Link } from 'react-router-dom';
+import { RiCalendarCheckFill, RiSettings5Fill, RiQuestionAnswerLine, RiPaletteLine } from 'react-icons/ri'
 
 function bannerClick() {
   window.open(
@@ -41,31 +42,24 @@ export default function EventSection() {
       </svg>
       <GradientCard>
         <Event>
-          <h3>Pre-events</h3>
-          <br />
-          <br />
-          <PreEventBanner onClick={bannerClick}></PreEventBanner>
+        <RiCalendarCheckFill></RiCalendarCheckFill>
+          <h3>Pre-events</h3>   
         </Event>
 
         <Event>
-          <h3>Workshops</h3>
-          <br />
-          <br />
-          <WorkshopBanner></WorkshopBanner>
+        <RiSettings5Fill></RiSettings5Fill>
+          <h3>Workshops</h3>          
         </Event>
 
         <Event>
+        <RiQuestionAnswerLine></RiQuestionAnswerLine>
           <h3>Talk Sessions</h3>
-          <br />
-          <br />
-          <TalksBanner></TalksBanner>
         </Event>
 
         <Event>
+        <RiPaletteLine></RiPaletteLine>
+
           <h3>Cultural</h3>
-          <br />
-          <br />
-          <CulturalBanner></CulturalBanner>
         </Event>
       </GradientCard>
 
