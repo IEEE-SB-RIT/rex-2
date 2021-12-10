@@ -4,39 +4,46 @@ import { HomeCenter } from '../components/Center';
 import Navbar from '../components/Navbar';
 import { HomeSection } from '../components/Center/CenterElements';
 import HeroSection from '../components/HeroSection';
-import Center from '../components/Center';
-import {RiCamera3Line} from 'react-icons/ri'
+import {REXGradientCenter} from '../components/Center';
+import {RiCameraFill, RiCodeSSlashFill, RiShape2Line, RiPencilFill} from 'react-icons/ri'
 import JoinButton from '../components/Button';
+import PreEventCard from '../components/PreEventCard'
+import { PreEventCenterContainer } from '../components/PreEventCard/PreEventCardElements';
 
 export default function PreEvents() {
+
+  const regLink = "https://docs.google.com/forms/d/e/1FAIpQLScWz7ABN-BC52BGDbJZswoqB-2KJjbh_Aqyy09HomkXB5tHCg/viewform";
+
   return (
     <>
-      <Center>
+    
+      <REXGradientCenter>
         <h1>Pre Events</h1>
-        <h5>Be a part of REX and stand a chance to win exciting prizes</h5>
-        <div>
+        <p>Be a part of REX and stand a chance to win exciting prizes</p>
+        <PreEventCenterContainer>
           <PreEventCard>
-            <RiCamera3Line />
+            <RiCameraFill  />
             <h3>Photography Competition</h3>
-            <JoinButton>Register Now</JoinButton>
+            <a href={regLink}><JoinButton>Register Now</JoinButton></a>
           </PreEventCard>
           <PreEventCard>
-            <RiCamera3Line />
+            <RiShape2Line />
             <h3>Poster Design Competition</h3>
-            <JoinButton>Register Now</JoinButton>
+            <a href={regLink}><JoinButton>Register Now</JoinButton></a>
           </PreEventCard>
           <PreEventCard>
-            <RiCamera3Line />
+            <RiCodeSSlashFill />
             <h3>Web Design Competition</h3>
-            <JoinButton>Register Now</JoinButton>
+            <a href={regLink}><JoinButton>Register Now</JoinButton></a>
           </PreEventCard>
           <PreEventCard>
-            <RiCamera3Line />
+            <RiPencilFill />
             <h3>Blogging Competition</h3>
-            <JoinButton>Register Now</JoinButton>
+            <a href={regLink}><JoinButton>Register Now</JoinButton></a>
           </PreEventCard>
-        </div>
-      </Center>
+          </PreEventCenterContainer>
+      </REXGradientCenter>
+      
     </>
   );
 }

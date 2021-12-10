@@ -14,7 +14,7 @@ export const Section = styled.div`
 
         @media screen and (max-width: 480px)
         {
-            top: 60%;
+            top: 50%;
         }
         
     }
@@ -58,5 +58,39 @@ export const HomeSection = styled(Section)`
     background: url(${rexBg});
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    overflow:hidden;
+
+`
+
+export const REXGradientSection = styled(Section)`
+    background: url(${rexBg});
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0 150px 0;
+    color: white;
+
+    & h1{
+        color: white;
+        
+        margin-bottom: 20px;
+    }
+
+    & h4{
+        margin-bottom: 30px;
+    }
+
+    & p {
+        
+        @media screen and (max-width: 480px)
+        {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        padding: 180px 20px 150px 20px;
+    }
 
 `

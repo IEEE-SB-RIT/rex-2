@@ -9,7 +9,7 @@ import {
 export default function ContactCard() {
   return (
     <>
-      <QueryCard>
+      <QueryCard id="contact">
         <Column>
           <h1>Have any Queries?</h1>
           <p>Feel free to get in touch with us.</p>

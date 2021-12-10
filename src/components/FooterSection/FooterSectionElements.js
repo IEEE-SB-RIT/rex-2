@@ -46,6 +46,11 @@ export const FooterLinksContainer = styled.div`
                 line-height: 24px;
                 text-decoration: none;
             }
+
+            & a:hover{
+                transition: color 0.3s ease;
+                color: #4d67fc;
+            }
         }
     }
 

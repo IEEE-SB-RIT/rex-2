@@ -1,5 +1,5 @@
 import ContactCard from '../ContactCard';
-import { FooterSection } from './FooterElements';
+import { FooterSection, CopyrightContainer } from './FooterElements';
 import { CenterContainer } from '../Center/CenterElements';
 import JoinButton from '../Button';
 import { ButtonContainer } from '../Button/ButtonElements';
@@ -12,9 +12,12 @@ export default function Footer() {
           <ContactCard />
           <h3>Don’t miss your chance! Register for the event now!</h3>
           <ButtonContainer>
-            <JoinButton>Register Now</JoinButton>
+            <a href="https://www.yepdesk.com/rex-2-0"><JoinButton>Register Now</JoinButton></a>
           </ButtonContainer>
           <FooterNav />
+          <CopyrightContainer>
+              <h5>Copyright &copy; 2022 Robotics Experience Program</h5>
+          </CopyrightContainer>
         </CenterContainer>
       </FooterSection>
     </>

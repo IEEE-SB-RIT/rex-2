@@ -5,6 +5,7 @@ import { CenterContainer } from "../Center/CenterElements";
 export const HeroContainer = styled.div`
     width: 100%;
     position: relative;
+    margin-bottom: 150px;
 
 
     & h1, h2, p {
@@ -60,6 +61,25 @@ export const HeroContentWrap = styled.div`
             text-align: center;
             font-size: 16px;
         }
+    }
+`
+
+export const HeroVideo = styled.video`
+    position: absolute;
+    width: 100%;
+    filter: brightness(0.3);
+
+    @media screen and (max-width: 480px){
+        width: auto;   
+        height: 720px;
+    }
+`
+
+export const MobRegButton = styled.div`
+    display: none;
+    @media screen and (max-width: 480px)
+    {
+        display: block;
     }
 `
 

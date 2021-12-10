@@ -1,25 +1,15 @@
 import React from 'react';
 import {
   GradientCard,
-  Event,
-  PreEventBanner,
-  WorkshopBanner,
-  TalksBanner,
-  CulturalBanner,
+  Event
 } from './EventSectionElements';
-import eventpic from '../../images/preRex2.jpeg';
 import { Link } from 'react-router-dom';
 import { RiCalendarCheckFill, RiSettings5Fill, RiQuestionAnswerLine, RiPaletteLine } from 'react-icons/ri'
 
-function bannerClick() {
-  window.open(
-    'https://docs.google.com/forms/d/e/1FAIpQLScWz7ABN-BC52BGDbJZswoqB-2KJjbh_Aqyy09HomkXB5tHCg/viewform',
-  );
-}
 export default function EventSection() {
   return (
     <>
-      <h1>
+      <h1 id="events">
         <span>E</span>VENTS
       </h1>
       <p>Stay tune till we reveal our amazing and exciting events!</p>
@@ -42,24 +32,22 @@ export default function EventSection() {
       </svg>
       <GradientCard>
         <Event>
+        <Link to="/pre-event">  
         <RiCalendarCheckFill></RiCalendarCheckFill>
-          <h3>Pre-events</h3>   
+          <h3>Pre-events</h3> 
+          </Link>  
         </Event>
-
+        
         <Event>
+        <Link to="/workshops">
         <RiSettings5Fill></RiSettings5Fill>
-          <h3>Workshops</h3>          
+          <h3>Workshops</h3>   
+          </Link>       
         </Event>
 
         <Event>
         <RiQuestionAnswerLine></RiQuestionAnswerLine>
           <h3>Talk Sessions</h3>
-        </Event>
-
-        <Event>
-        <RiPaletteLine></RiPaletteLine>
-
-          <h3>Cultural</h3>
         </Event>
       </GradientCard>
 

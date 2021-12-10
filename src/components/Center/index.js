@@ -1,5 +1,5 @@
 import React from "react";
-import {Section, CenterContainer, HomeSection} from "./CenterElements"
+import {Section, CenterContainer, HomeSection, REXGradientSection} from "./CenterElements"
 
 //center component
 export default function Center(props)
@@ -23,5 +23,16 @@ export function HomeCenter(props)
                 {props.children}
             </CenterContainer>
         </HomeSection>
+    );
+}
+
+export function REXGradientCenter(props)
+{
+    return (
+        <REXGradientSection>
+            <CenterContainer>
+                {props.children}
+            </CenterContainer>
+        </REXGradientSection>
     );
 }

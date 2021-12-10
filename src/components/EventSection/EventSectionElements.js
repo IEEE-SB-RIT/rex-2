@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import eventpic from '../../images/events.png';
-import workshop from '../../images/workshop.png';
-import talk from '../../images/talk.png';
-import cultural from '../../images/mic.png';
 
 export const GradientCard = styled.div`
   flex: 1;
@@ -12,7 +8,7 @@ export const GradientCard = styled.div`
   min-height: 300px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 50px 0 200px 0;
   position: relative;
@@ -33,13 +29,29 @@ export const Event = styled.div`
   padding: 20px;
   color: white;
 
+  @media screen and (max-width: 480px)
+  {
+    flex: 0 1 100%;
+    margin: 20px 0;
+  }
+
+  & a{
+    color: white;
+    text-decoration: none;
+  }
+
   & svg{
+    color: white;
       margin: 0 0 30px 0;
       position: relative !important;
       font-size: 75px;
       padding: 15px;
       background-color: #66346060;
       border-radius: 8px;
+  }
+
+  & h3{
+    position: relative;
   }
 
   &:hover svg{
@@ -50,79 +62,22 @@ export const Event = styled.div`
   &:hover h3{
     transform: scale(1.1);
     transition: transform 0.5s ease;
+  }
 
-  & h3:nth-of-type(2)::after, & h3:nth-of-type(3)::after, & h3:nth-of-type(4)::after 
+  &:nth-of-type(3) h3:after, &:nth-of-type(4) h3:after
   {
     content: "COMING SOON";
     display: inline-block;
-    color: white;
-    font-size: 10px;
+    font-weight: normal;
+    position: absolute;
+    top: -10px;
+    left: calc(100% - 10px);
+    color: #BD00FF;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    font-size: 8px;
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid #BD00FF;
     border-radius: 50px;
   }
-
-  @media screen and (max-width: 480px) {
-    flex: 0 1 100%;
-  }
 `;
-
-// export const PreEventBanner = styled.div`
-//   background-image: url(${eventpic});
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   margin-top: 45px;
-//   height: 160px;
-//   width: 160px;
-//   border-radius: 10px;
-
-//   &:hover {
-//     transform: scale(1.05);
-//     transition: ease 0.3s;
-//   }
-// `;
-
-// export const WorkshopBanner = styled.div`
-//   background-image: url(${workshop});
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   height: 160px;
-//   width: 160px;
-//   margin-top: 45px;
-//   border-radius: 10px;
-
-//   &:hover {
-//     transform: scale(1.05);
-//     transition: ease-in 0.3s;
-//   }
-// `;
-
-// export const TalksBanner = styled.div`
-//   background-image: url(${talk});
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   height: 160px;
-//   width: 160px;
-//   margin-top: 45px;
-//   border-radius: 10px;
-
-//   &:hover {
-//     transform: scale(1.05);
-//     transition: ease-in 0.3s;
-//   }
-// `;
-
-// export const CulturalBanner = styled.div`
-//   background-image: url(${cultural});
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   height: 160px;
-//   width: 160px;
-//   margin-top: 45px;
-//   border-radius: 10px;
-
-//   &:hover {
-//     transform: scale(1.05);
-//     transition: ease-in 0.3s;
-//   }
-// `;

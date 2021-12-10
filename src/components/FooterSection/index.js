@@ -5,6 +5,8 @@ import {
   FooterLinksContainer,
   LinksContainer
 } from './FooterSectionElements';
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function FooterNav() {
   return (
@@ -47,13 +49,13 @@ export default function FooterNav() {
           <h3>See More</h3>
           <ul>
             <li>
-              <a href="">Talk Sessions</a>
+              <HashLink to="/#events">Talk Sessions</HashLink>
             </li>
             <li>
-              <a href="">Workshops</a>
+              <HashLink to="/#events">Workshops</HashLink>
             </li>
             <li>
-              <a href="">Culturals</a>
+              <HashLink to="/speakers">Speakers</HashLink>
             </li>
             <li>
               <a

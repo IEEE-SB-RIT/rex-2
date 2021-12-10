@@ -48,7 +48,12 @@ export const NavList = styled.ul`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  & a{
+    text-decoration: none;
+  }
+
+
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -64,6 +69,9 @@ export const MobNavList = styled.ul`
   background-color: #000000;
   z-index: 30;
   list-style: none;
+  & a{
+    text-decoration: none;
+  }
 
   & li {
     margin: 20px 0;
@@ -82,6 +90,11 @@ export const NavListItem = styled.li`
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
+
+  &:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
 
   & button {
     font-size: 14px;

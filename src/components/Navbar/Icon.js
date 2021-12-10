@@ -5,10 +5,17 @@ export default function Icon({toggle})
 {
     return (
         <>
-            <HamburgerIcon onClick={toggle}/>
+            <TransparentButton onClick={toggle}>
+                <HamburgerIcon/>
+        </TransparentButton>
         </>
     )
 }
+
+const TransparentButton = styled.button`
+    border: none;
+    background: transparent;
+`
 
 const HamburgerIcon = styled.div`
     display: none;
@@ -37,7 +44,7 @@ const HamburgerIcon = styled.div`
         bottom: 8px;
     }
 
-    @media screen and (max-width: 480px)
+    @media screen and (max-width: 768px)
     {
         display: block;
     } 

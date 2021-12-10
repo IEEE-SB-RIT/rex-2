@@ -1,11 +1,14 @@
 import React from 'react';
-import { preEventCardWrapper } from './PreEventCardElements';
+import { PreEventCardGradientWrapper, PreEventCardWrapper, PreEventCenterContainer } from './PreEventCardElements';
 
-export default function(props)
+export default function PreEventCard(props)
 {
     return (
+        
+        <PreEventCardGradientWrapper>
         <PreEventCardWrapper>
             {props.children}
         </PreEventCardWrapper>
+        </PreEventCardGradientWrapper>
     )
 }

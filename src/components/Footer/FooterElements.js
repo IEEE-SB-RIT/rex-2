@@ -6,3 +6,18 @@ export const FooterSection = styled(Section)`
     min-height: 400px;
     color: white;
 `
+
+export const CopyrightContainer = styled.div`
+    text-align: center;
+    width: 100%;
+
+    & h5{
+        opacity: 0.9;
+        margin: 0 0 40px;
+        font-weight: normal;
+    }
+
+    & h5 span a{
+        color: white;
+    }
+`;
