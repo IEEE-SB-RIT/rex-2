@@ -58,7 +58,7 @@ export default function HeroSection() {
           </ButtonContainer>
           </MobRegButton>
 
-          <LiveInContent>
+          {/*<LiveInContent>
             <h2>
               LIVE <span>in</span>
             </h2>
@@ -67,7 +67,7 @@ export default function HeroSection() {
               {' '}
               <span>Hurry! Only</span> LIMITED SEATS LEFT
             </h2>
-          </LiveInContent>
+          </LiveInContent>*/}
 
           <ScrollIcon />
         </HeroCenter>
